@@ -1,0 +1,97 @@
+{
+  "reactFunctionComponent": {
+    "prefix": "fc",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = (${2:props}) => {",
+      "  return (",
+      "    ${3:null}",
+      "  );",
+      "};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "reactPureFunctionComponent": {
+    "prefix": "pfc",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = (${2:props}) => (",
+      "  ${3:null}",
+      ");"
+    ],
+    "description": "Creates a React pure functional component"
+  },
+  "reactFunctionComponentExported": {
+    "prefix": "fce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = (${2:props}) => {",
+      "  return (",
+      "    ${3:null}",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "reactPureFunctionComponentExported": {
+    "prefix": "pfce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = (${2:props}) => (",
+      "  ${3:null}",
+      ");",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "reactForwardFunctionComponentExported": {
+    "prefix": "ffce",
+    "body": [
+      "import { forwardRef } from 'react';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = forwardRef((${2:props}, ref) => {",
+      "  return (",
+      "    <div ref={ref}>$0",
+      "    </div>",
+      "  );",
+      "});",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "reactForwardPureFunctionComponentExported": {
+    "prefix": "fpfce",
+    "body": [
+      "import { forwardRef } from 'react';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = forwardRef((${2:props}, ref) => (",
+      "  <div ref={ref}>$0",
+      "  </div>",
+      "));",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "importDefaultComponent": {
+    "prefix": "imf",
+    "body": [
+      "import ${1:Component} from '${2:./}${3:$1}';"
+    ],
+    "description": "Import Component from ./Component"
+  },
+  "exportComponent": {
+    "prefix": "exp",
+    "body": [
+      "export default ${1:Component};"
+    ],
+    "description": "Export default Component"
+  },
+  "reexportDefaultComponent": {
+    "prefix": "expd",
+    "body": [
+      "export { default } from './$1';"
+    ],
+    "description": "Reexport default"
+  }
+}

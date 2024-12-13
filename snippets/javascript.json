@@ -1,0 +1,24 @@
+{
+  "importDefaultComponent": {
+    "prefix": "imf",
+    "body": [
+      "import ${1:Component} from '${2:./}${3:$1}';"
+    ],
+    "description": "Import Component from ./Component"
+  },
+  "exportComponent": {
+    "prefix": "exp",
+    "body": [
+      "export default ${1:Component};"
+    ],
+    "description": "Export default Component"
+  },
+  "reexportDefaultComponent": {
+    "prefix": "expd",
+    "body": [
+      "import ${1:Component} from '${2:./}$1';",
+      "export default $1;"
+    ],
+    "description": "Reexport default"
+  }
+}
